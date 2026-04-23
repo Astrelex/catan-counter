@@ -12,7 +12,6 @@ export function getDefaultGame(): GameType {
   return {
     players: [],
     gameType: GameTypeEnum.STANDARD,
-    chatsProcessed: 0,
     gameResources: {
       sheep: 19,
       wheat: 19,
@@ -64,7 +63,7 @@ export function setYouPlayer(playerName: string): void {
 }
 
 /**
- * Automatically sets the current player from web-header-username
+ * Automatically sets the current player from header_profile_username
  * Returns true if successful, false otherwise
  */
 export function autoDetectCurrentPlayer(): boolean {

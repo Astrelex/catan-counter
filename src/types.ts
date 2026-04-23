@@ -49,7 +49,6 @@ export enum GameTypeEnum {
 export interface GameType {
   players: PlayerType[];
   gameType: GameTypeEnum;
-  chatsProcessed: number;
   gameResources: ResourceObjectType;
   devCards: number;
   knights: number;
